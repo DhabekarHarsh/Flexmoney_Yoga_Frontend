@@ -1,0 +1,97 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15%;
+  }
+
+  .overflow {
+
+    max-height: 100vh;
+  }
+
+  .left-text {
+    text-align: center;
+    padding: 2rem;
+    background-color: #032947;
+    color: white;
+    border-radius: 10px ;
+
+  }
+
+  .left-text img {
+    width: 250px;
+    height: 125px;
+  }
+
+  .left-text p {
+    margin: 0.5rem 0;
+  }
+
+  .signinform {
+    background-color: #032947;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 400px;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+
+  .required {
+    color: #e74c3c;
+  }
+
+  .btn-size {
+    background-color: #3498db;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-size:hover {
+    background-color: #2980b9;
+  }
+
+  .font-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #95a5a6;
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .left-text {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .signinform {
+      border-radius: 0 0 10px 10px;
+      margin-top: -1px;
+    }
+  }
