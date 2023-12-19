@@ -50,8 +50,10 @@ export default function RegistrationScreen() {
 
         setLoadingUpload(true);
 
+        //    https://flexmoney-yoga.onrender.com
+
         try{
-            const { data } = await Axios.post('https://flexmoney-yoga.onrender.com/api/uploads', formData, {
+            const { data } = await Axios.post('/api/uploads', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 }
